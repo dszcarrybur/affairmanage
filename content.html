@@ -216,18 +216,34 @@ body {
 							sdfsfds
 					</div>
 					<div class="list-group">
-						<div class="list-group-item " data-target="#collapseExample"<!--其中data-target代表其将会转跳显示的隐藏元素，collapse所有元素上都可以用包括a、div、botton-->
-						data-toggle="collapse" aria-expanded="flase" aria-controls="collapseExample"><!--aria-expanded=flase代表默认该collapse元素隐藏-->
-							<h4 style="border-bottom: 1px solid #ddd">aa</h4><!--仅添加下边缘，1px宽，实线，灰色-->
-							<p>Cras justo odiosfdsfdsfdsfdssssssssssssssssssssssssssssssssssssssss</p>
+						<div class="list-group-item affair"  style="clear: left;" data-target="#collapseExample"
+						data-toggle="collapse" aria-expanded="flase" aria-controls="collapseExample"><!--aria-expanded=flase代表默认该collapse元素隐藏--><!--其中data-target代表其将会转跳显示的隐藏元素，collapse所有元素上都可以用包括a、div、botton-->
+							<h4 style="border-bottom: 1px solid #ddd;padding-bottom:10px;margin-bottom: 0px;">aa</h4><!--仅添加下边缘，1px宽，实线，灰色-->
+							<p style="margin: 10px 0 10px;">Cras justo odiosfdsfdsfdsfdssssssssssssssssssssssssssssssssssssssss</p>
 							<!--在此处再添加一个供点击后显示的扩展小页，主色调为潜灰色，或深灰色-->
 						</div>
-						<div class="collapse " id="collapseExample" aria-expanded="false">
-						  <div class="well">
-							...aaaa
-						  </div>
+						
+						<div class="collapse " id="collapseExample" aria-expanded="false" >
+							<form class="form-inline">
+							  <div class="form-group col-xs-6" style="margin-bottom: 0px;padding-right: 0px;padding-left: 0px;">
+								<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+								<div class="input-group " style="    width: 100%;">
+								  
+								  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount" style="border-bottom-left-radius: 4px;">
+								  
+								</div>
+							  </div>
+							  <!--<button type="submit" class="btn btn-primary">Transfer cash</button>-->
+							
+							
+							<div class="btn-group col-xs-6" role="group" style="padding-left:0px;padding-right:0px" aria-label="..." >
+							  <button type="button" class="btn btn-default col-xs-4" style="padding: 6px 0px;margin-left: 0px;border-radius: 0px;border-left-width: 0px;">备注</button>
+							  <button type="button" class="btn btn-default col-xs-4" style="padding: 6px 0px;margin-left: 0px;border-radius: 0px;border-left-width: 0px;">升级</button>
+							  <button type="button" class="btn btn-default col-xs-4" style="padding: 6px 0px;margin-left: 0px;border-left-width: 0px;border-top-right-radius: 0px;">完成</button>
+							</div>
+							</form>
 						</div>
-						<a href="#collapseExample" class="list-group-item"  >
+						<a href="#collapseExample" class="list-group-item"  style="clear: left;"><!--清除了上面的的float：left-->
 						Dapibus ac facilisis in</a>
 						
 						<a href="#" class="list-group-item">Morbi leo risus</a>
